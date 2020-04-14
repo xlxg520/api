@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/reg','User\LoginController@reg');  //注册接口
+Route::post('/login','User\LoginController@login');  //登录接口
+Route::get('/logout','User\LoginController@logout');  //退出接口
+
+
+
+
+
